@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+    $(document).on("ready",function(){
+    $("div").hover(function(){
+    $("div").animate({"height":"120px","width":"120px","backgroundColor":"red"
+    },{
+    duration:8000,easing:"swing",complete:function(){
+    $(this).after("<h4>This animation is complete</h4>")
+    }
+    })
+   })
+   })
+    </script>
+    </head>
+    <body>
+        <div style="height: 50px;width: 50px;background-color: goldenrod;"></div>
+    </body>
+</html>
