@@ -1,0 +1,70 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+$(document).ready(function()
+{
+$("#btn1").click(function()
+{
+var t1=Number($("#txt1").val());
+var t2=Number($("#txt2").val());
+$("#txt3").val("Addition is:"+(t1+t2));
+$("#txt3").css({"color":"red","border":"1px solid red","fontSize":"22px"});
+})
+$("#btn2").click(function()
+{
+var t1=Number($("#txt1").val());
+var t2=Number($("#txt2").val());
+$("#txt3").val("Subtraction is:"+(t1-t2));
+$("#txt3").css({"color":"blue","border":"1px solid blue","fontSize":"22px"});
+})
+$("#btn3").click(function()
+{
+var t1=Number($("#txt1").val());
+var t2=Number($("#txt2").val());
+$("#txt3").val("Multiplication is:"+(t1*t2));
+$("#txt3").css({"color":"teal","border":"1px solid teal","fontSize":"22px"});
+})
+$("#btn4").click(function()
+{
+var t1=Number($("#txt1").val());
+var t2=Number($("#txt2").val());
+$("#txt3").val("Division is:"+(t1/t2));
+$("#txt3").css({"color":"indigo","border":"1px solid indigo","fontSize":"22px"});
+})
+$("#btn5").click(function()
+{
+var t1=Number($("#txt1").val());
+var t2=Number($("#txt2").val());
+$("#txt3").val("Remainder is:"+(t1%t2));
+$("#txt3").css({"color":"green","border":"1px solid grenn","fontSize":"22px"});
+})
+})
+    </script>
+    </head>
+<body>
+<h1 class="text-center btn-success" style="margin: 0px;">Example of Jquery with Bootstrap</h1>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="col-sm-4"></div>
+<div class="col-sm-4 panel panel-body" style="box-shadow: 5px 10px 5px 10px indigo;">
+Enter first number:
+<input type="text" id="txt1" class="form-control">
+Enter second number:
+<input type="text" id="txt2" class="form-control">
+Display Result:
+<input type="text" id="txt3" class="form-control"><br>
+<input type="button" value="+" id="btn1" class="btn btn-success">
+<input type="button" value="-" id="btn2" class="btn btn-danger">
+<input type="button" value="*" id="btn3" class="btn btn-info">
+<input type="button" value="/" id="btn4" class="btn btn-default">
+<input type="button" value="%" id="btn5" class="btn btn-warning">
+</div>
+<div class="col-sm-4"></div>
+</div>
+</div>
+</div>
+</body>
+</html>
