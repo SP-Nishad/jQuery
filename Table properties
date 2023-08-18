@@ -1,0 +1,78 @@
+<html>
+    <head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn2").click(function(){
+$("#tbl").prepend("<tr><td>1</td><td>Anant</td><td>6394438935</td><td>pqr@gmail.com</td><td>Sultanpur,,Uttar Pradesh</td><td>Knipss</td></tr>");
+});
+$("#btn1").click(function(){
+$("#tbl").append("<tr><td>5</td><td>Sanskar</td><td>6394438745</td><td>nmo@gmail.com</td><td>Sultanpur,Uttar Pradesh</td><td>Knipss</td></tr>");
+});
+$("#btn3").click(function(){
+$("#tbl").remove();
+})
+$("#btn4").click(function(){
+$("#tbl").empty();
+})
+});
+</script>
+    </head>
+    <body>
+<table id="tbl" class="table" border="1px" align="center" cellspacing="0px" cellpandding="10px">
+<tbody>
+<tr class="btn-primary">
+    <th>S.no</th>
+    <th>Std Name</th>
+    <th>Mobil no.</th>
+    <th>Email ID</th>
+    <th>Address</td>
+    <th>College Name</th>
+</tr>
+<tr class="success">
+    <td>1</td>
+    <td>Shashi</td>
+    <td>6394432088</td>
+    <td>abc@gmail.com</td>
+    <td>Sultanpur,Uttar Pradesh</td>
+    <td>Knipss</td>
+</tr>
+<tr class="info">
+    <td>2</td>
+    <td>Surya</td>
+    <td>8112873384</td>
+    <td>def@gmail.com</td>
+    <td>Sultanpur,Uttar Pradesh</td>
+    <td>Knipss</td>
+</tr>
+<tr class="warning">
+    <td>3</td>
+    <td>Shivam</td>
+    <td>6394433285</td>
+    <td>ghi@gmail.com</td>
+    <td>Sultanpur,Uttar Pradesh</td>
+    <td>Knipss</td>
+</tr>
+<tr class="danger">
+    <td>4</td>
+    <td>Piyush</td>
+    <td>6394436987</td>
+    <td>jkl@gmail.com</td>
+    <td>Sultanpur,Uttar Pradesh</td>
+    <td>Knipss</td>
+</tr>
+    </tbody>
+    </table>
+    <br>
+<div class="container" align="center">
+<div class="btn-group">
+<input type="button" id="btn1" value="append" class="btn btn-info">
+<input type="button" id="btn2" value="prepend" class="btn btn-success">
+<input type="button" id="btn3" value="remove" class="btn btn-warning">
+<input type="button" id="btn4" value="empty" class="btn btn-danger">
+</div>
+</div>
+</body>
+</html>
